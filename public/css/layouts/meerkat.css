@@ -1,7 +1,31 @@
-* {
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+
+*, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content {
+  margin-left: 44%;
+}
+
+#twitter-widget-0 {
+    width: 100% !important;
 }
 
 a {
@@ -31,11 +55,13 @@ h3 {
     text-align: center;
     top: auto;
     margin: 3em auto;
+    font-family: Helvetica;
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: #2A4D6E;
     color: #fff;
+    width: 45%;
 }
 
 .brand-title,
@@ -44,10 +70,11 @@ h3 {
 }
 .brand-title {
     text-transform: uppercase;
+    font-weight: 100;
 }
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: #AA8F39;
 }
 
 .nav-list {
@@ -159,7 +186,7 @@ h3 {
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;
-        margin-left: 25%;
+        margin-left: 45%;
     }
 
     .header {
